@@ -5,9 +5,9 @@ const speed = 600
 
 func _physics_process(delta):
 	var direction = 0
-	if Input.is_action_pressed("up"):
+	if Input.is_action_pressed("ui_up"):
 		direction -= 1
-	if Input.is_action_pressed("down"):
+	if Input.is_action_pressed("ui_down"):
 		direction += 1
 	
 	position.y += direction * speed * delta
